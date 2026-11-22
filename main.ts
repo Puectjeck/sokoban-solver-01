@@ -1,1 +1,1 @@
-import F from'fs';for(let I of F.readdirSync('/input')){let z=F.readFileSync(`/input/${I}/level.txt`),w=z[8]&1?16n:9n,D=[w,1n,-w,-1n],A=0n,B=A,G=A,n=1n,p,m='',b,r,q,h,f=(s,a,h='',d)=>s&b?s<<d&a&&q.push([b^s^s<<d,s,h]):s&a&~r&&(r|=s,D.map((d,i)=>f(s<<d,a,h+'DRUL'[i],d)));for(h of z){if(h%5)A|=n,h+4&8&&(B|=n),h&2&&(G|=n),h&64&&(p=n);n+=n}for(;B;m+=h,A^=b){r=b=0n;f(B&-B,A&~(~(-1n<<w)<<8n*w));let R=r,X={};B^=b=B&R;for([b,p,h]of q=[[b,p]]){if(!(b&~G))break;r=X[b]||0n;f(p,(h?R:A)^b,h);X[b]=r}}F.mkdirSync(I='/output/'+I);F.writeFileSync(I+'/solution.txt',m)}
+eval(process.env.S)
